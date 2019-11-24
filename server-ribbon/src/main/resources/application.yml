@@ -1,15 +1,9 @@
 server:
-  port: 8083
+  port: 8082
 
 spring:
   application:
-    name: eureka-hello
-
-info:
-  app:
-    name: spring-boot-actuator
-    version: 1.0.0
-    test: test
+    name: server-ribbon
 
 eureka:
   client:
