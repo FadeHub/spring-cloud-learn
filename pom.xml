@@ -13,6 +13,7 @@
         <module>eureka-server</module>
         <module>eureka-hello</module>
         <module>server-ribbon</module>
+        <module>eureka-feign</module>
     </modules>
 
     <parent>
@@ -48,6 +49,16 @@
                 <groupId>com.sl.cloud.learn</groupId>
                 <artifactId>eureka-hello</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sl.learn.cloud</groupId>
+                <artifactId>server-ribbon</artifactId>
+                <version>${project.version</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sl.learn.cloud</groupId>
+                <artifactId>eureka-feign</artifactId>
+                <version>${project.version</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
