@@ -1,0 +1,33 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: zuul-gateway
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+zuul:
+  routes:
+    ## 名字任意写
+    api-feign:
+      path: /api-feign/**
+      ## 注册到eureka Id
+      serviceId: eureka-feign
+    api-ribbon:
+      path: /api-ribbon/**
+      ## 注册到eureka Id
+      serviceId: server-ribbon
