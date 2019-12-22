@@ -18,6 +18,9 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>config-client-bus</module>
+        <module>config-server-bus</module>
+        <module>zipkin-servce-hi</module>
+        <module>zipkin-service-hello</module>
     </modules>
 
     <parent>
