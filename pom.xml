@@ -21,6 +21,7 @@
         <module>config-server-bus</module>
         <module>zipkin-servce-hi</module>
         <module>zipkin-service-hello</module>
+        <module>consul-client</module>
     </modules>
 
     <parent>
